@@ -1,0 +1,16 @@
+<h1>Stockintory</h1>
+
+<table>
+    <tr>
+        <th>Item</th>
+    </tr>
+    {% for task in tasks %}
+        <tr>
+            <td>{{ task.title }}</td>
+        </tr>
+    {% empty %}  
+        <tr>
+            <td>No Items in list</td>
+        </tr>     
+    {% endfor %}
+</table>
